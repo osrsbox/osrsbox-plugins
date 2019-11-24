@@ -35,9 +35,12 @@ java -ea -cp net.runelite.client.RuneLite -jar $runeliteversion --debug --develo
 
 ### plugins/bagspace
 
-Status: Current
-Issues: None
-Purpose: Simple overlay (using an InfoBox) to display the current count of items in the player's inventory. Authored to help my UIM track bag space more easily. Might add support for the looting bag in the future.
+- Status: Current
+- Issues: None
+- Purpose: 
+    - Simple overlay to display the current count of items in the player's inventory. 
+    - Authored to help my UIM track bag space more easily. 
+    - Might add support for the looting bag in the future.
 
 ```
 plugins/bagspace
@@ -47,9 +50,10 @@ plugins/bagspace
 
 ### plugins/currentworld
 
-Status: Current
-Issues: None
-Purpose: Simple overlay to show the player's current world number.
+- Status: Current
+- Issues: None
+- Purpose: 
+    - Simple overlay to show the player's current world number.
 
 ```
 plugins/currentworld/
@@ -60,9 +64,11 @@ plugins/currentworld/
 
 ### plugins/metadatadumper
 
-Status: Current
-Issues: None
-Purpose: Dump item metadata, NPC metadata and item icon images. The data is the same information as contained in the ItemDefintion data that can be exported by most cache tools.
+- Status: Current
+- Issues: None
+- Purpose: 
+    - Dump item metadata, NPC metadata and item icon images.
+    - The data is the same information as contained in the ItemDefintion data that can be exported by most cache tools.
 
 ```
 plugins/metadatadumper/
@@ -74,9 +80,11 @@ plugins/metadatadumper/
 
 ### plugins/npclocations
 
-Status: Development
-Issues: None
-Purpose: Dump NPC world locations to JSON.
+- Status: Development
+- Issues: None
+- Purpose: 
+    - Dump NPC world locations to JSON.
+    - Needs updating and checking after attempting to plot on world map.
 
 ```
 plugins/npclocations/
@@ -87,9 +95,13 @@ plugins/npclocations/
 
 ### plugins/itemscraper
 
-Status: Outdated
-Issues: Uses `org.json.simple` instead of `com.google.gson.Gson` for JSON output. Is very slow compared to the new metadatadumper plugin. Also needs the Simple JSON library dependency added to `runelite-client/pom.xml file`.
-Purpose: Dump item metadata and item icon images (replaced by metadatadumper).
+- Status: Outdated
+- Issues: 
+    - Uses `org.json.simple` instead of `com.google.gson.Gson` for JSON output.
+    - Is very slow compared to the new metadatadumper plugin. 
+    - Needs the Simple JSON library dependency added to `runelite-client/pom.xml file`.
+- Purpose: 
+    - Dump item metadata and item icon images (replaced by metadatadumper).
 
 ```
 plugins/itemscraper/
@@ -99,9 +111,13 @@ plugins/itemscraper/
 
 ### plugins/playerscraper
 
-Status: Outdated (but still works)
-Issues: Uses `org.json.simple` instead of `com.google.gson.Gson` for JSON output.
-Purpose: Dump equipment data in JSON format of players in close location. Option to dump either one player's equipment, or multiple.
+- Status: Outdated (but still works)
+- Issues:
+    - Uses `org.json.simple` instead of `com.google.gson.Gson` for JSON output.
+    - Needs the Simple JSON library dependency added to `runelite-client/pom.xml file`.
+- Purpose: 
+    - Dump equipment data in JSON format of players in close location.
+    - Option to dump either one player's equipment, or multiple.
 
 ```
 plugins/playerscraper/
